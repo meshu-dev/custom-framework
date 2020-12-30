@@ -1,11 +1,11 @@
 # Custom Framework
 
-A demo PHP framework which uses routing and dependancy injection plugins. 
+A demo to see how libraries can be integrated with a custom PHP framework.
 
-## Libraries
+## Libraries used
 
-* [FastRoute](https://github.com/nikic/FastRoute)
-* [PHP-DI](https://github.com/PHP-DI/PHP-DI)
+* Routing - [FastRoute](https://github.com/nikic/FastRoute)
+* Dependancy Injection - [PHP-DI](https://github.com/PHP-DI/PHP-DI)
 
 ## Install software (using Mac and brew)
 
