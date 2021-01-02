@@ -16,7 +16,7 @@ $url = rawurldecode($url);
 
 $routeInfo = $dispatcher->dispatch($httpMethod, $url);
 
-$container = require_once __DIR__ . '/dependancy-injection.php';
+$container = require_once __DIR__ . '/dependancies.php';
 
 switch ($routeInfo[0]) {
     case FastRoute\Dispatcher::NOT_FOUND:
@@ -30,6 +30,7 @@ switch ($routeInfo[0]) {
         $route = $routeInfo[1];
         $vars = $routeInfo[2];
 
-        $container->call($route, $vars);
+        $view = $container->call($route, $vars);
+        echo $view;
         break;
 }
